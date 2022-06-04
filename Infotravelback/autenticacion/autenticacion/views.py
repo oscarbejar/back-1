@@ -8,7 +8,7 @@ from django.contrib import messages
 
 class VRegistro(View):
     
-    def get(selft,request): #el get nos muestra el formulario
+    def get(self,request): #el get nos muestra el formulario
 
         form=UserCreationForm() #variable que almacena el formulario a ver
         return render(request, "registro/registro.html",{"form":form})
